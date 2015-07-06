@@ -19,7 +19,7 @@ class DatabaseUtil {
             if (!$conn) throw new Exception("Gak connect");
             else echo "Success <br/>";
         } catch (Exception $conn) {
-            echo $conn;
+            echo $conn->getMessage();
         }
     }
 }
